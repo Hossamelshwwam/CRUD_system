@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRADS operation</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normaliez.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cruds">
+      <h3 class="main-title">
+        cruds <span style="text-transform: capitalize">system</span>
+      </h3>
+      <div class="main-form">
+        <input type="text" class="title" placeholder="title" />
+        <div class="price-countainer">
+          <input type="number" class="price" placeholder="price" />
+          <input type="number" class="taxes" placeholder="taxes" />
+          <input type="number" class="ads" placeholder="ads" />
+          <input type="number" class="discount" placeholder="discount" />
+          <p class="totle">
+            <span class="totle-price">totle :</span
+            ><span class="totle-number"></span>
+          </p>
+        </div>
+        <input type="number" class="count" placeholder="count" />
+        <input type="text" class="category" placeholder="category" />
+        <p class="create">create</p>
+        <p class="update">update</p>
+        <input
+          type="text"
+          class="search"
+          placeholder="search 'press which type do you want'"
+          disabled
+        />
+        <input type="text" class="search-title" placeholder="search by title" />
+        <input
+          type="text"
+          class="search-category"
+          placeholder="search by category"
+        />
+        <div class="search-area">
+          <p class="search-by-title">search by title</p>
+          <p class="search-by-category">search by category</p>
+        </div>
+        <div class="search-price">
+          <input
+            type="number"
+            class="price-more"
+            placeholder="price more than"
+          />
+          <input
+            type="number"
+            class="price-less"
+            placeholder="price less than"
+          />
+        </div>
+        <p class="search-btn">search</p>
+        <!-- <p class="delete-all">delete all()</p> -->
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th style="width: 10px"></th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
